@@ -56,7 +56,7 @@ def main():
         input_df['Predicted Result'] = predicted_class
         st.session_state['data'] = pd.concat([st.session_state['data'], input_df], ignore_index=True)
 
-    if st.button('Clear'):
+    if st.button('Clear Data'):
         st.session_state['data'] = pd.DataFrame(columns=['menopaus', 'agegrp', 'density', 'race', 'Hispanic', 'bmi',
                                                           'agefirst', 'nrelbc',
                                                           'brstproc', 'lastmamm', 'surgmeno',
