@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import predictor2
+import predictor
 
 st.set_page_config("MammoPredict", page_icon="👑", layout="wide")
 
