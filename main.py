@@ -47,7 +47,7 @@ def main():
     with col1:
         if st.button('Predict Breast Cancer'):
             input_df = pd.DataFrame(input_values, index=[0])
-            predicted_class = predictor2.predict_class(input_df)
+            predicted_class = predictor.predict_class(input_df)
             input_df['Predicted Result'] = predicted_class
             st.session_state['data'] = pd.concat([st.session_state['data'], input_df.dropna(axis=1)], ignore_index=True)
             st.session_state['data'].index += 1 
